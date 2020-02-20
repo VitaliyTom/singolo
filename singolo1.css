@@ -1,0 +1,271 @@
+@import url("fonts.css");
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+body {
+	width: 100%;
+	max-width: 1020px;
+	margin: auto;
+	font-size: 1.2rem;
+}
+
+/*------------------------ header ---------------------------- */
+
+.wrapper {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 40px 38px 33px;
+	text-transform: uppercase;
+	background-color: #2d303a;
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.logo > a {
+	font-size: 2.5rem;
+	line-height: 0.253;
+	letter-spacing: 0.01px;
+	color: white;
+	text-decoration: none;
+}
+
+.navigation a {
+	position: relative;
+	padding-left: 29px;
+	font-size: 1.2rem;
+	text-decoration: none;
+	line-height: 0.527;
+	letter-spacing: 0.05px;
+}
+
+.navigation a:hover {
+	color: #f06c64;
+}
+
+.navigation a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 49%;
+	left: 100%;
+	margin-left: 14px;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	background: #494e62;
+}
+
+.navigation li:last-child a::after {
+	display: none;
+}
+
+.logo a,
+.navigation a {
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+}
+
+.logo span {
+	color: #f06c64;
+}
+
+.line_color.one {
+	height: 6px;
+	background-color: #323746;
+}
+
+/*------------------------ slider ----------------------------*/
+
+.section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 45px;
+	padding-left: 45px;
+	background-color: #f06c64;
+}
+
+.slider_arrow_left {
+	width: 21px;
+	height: 21px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	border-top: 6px solid #ca4549;
+	border-left: 6px solid #ca4549;
+	transform: rotate(315deg);
+	cursor: pointer;
+}
+.slider_arrow_left:hover {
+	border-top: 6px solid #000000;
+	border-left: 6px solid #000000;
+}
+
+.slider_arrow_right {
+	width: 21px;
+	height: 21px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	border-top: 6px solid #ca4549;
+	border-left: 6px solid #ca4549;
+	transform: rotate(135deg);
+	cursor: pointer;
+}
+
+.slider_arrow_right:hover {
+	border-top: 6px solid #000000;
+	border-left: 6px solid #000000;
+}
+
+.phones {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 53px;
+	margin-bottom: 55px;
+}
+
+.iphone_vertical {
+	position: relative;
+	margin-left: 46px;
+}
+
+.iphone_vertical > .screen {
+	position: absolute;
+	top: 62px;
+	left: 11px;
+	width: 194px;
+	height: 339px;
+	border: 3px solid #c6c6c6;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.iphone_horizontal {
+	position: relative;
+	margin-right: 46px;
+	margin-bottom: 1px;
+}
+
+.iphone_horizontal > .screen {
+	position: absolute;
+	top: 11px;
+	left: 57px;
+	width: 339px;
+	height: 194px;
+	border: 3px solid #c6c6c6;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.line_color.two {
+	height: 6px;
+	background-color: #ea676b;
+}
+
+/*------------------------ service ----------------------------*/
+
+.section_services {
+	display: flex;
+	padding-right: 40px;
+	padding-left: 40px;
+	background-color: #f2f2f2;
+}
+
+.services {
+	margin-top: 68px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-weight: 900;
+	padding-bottom: 26px;
+}
+
+.section_services p {
+	font-size: 18px;
+	line-height: 1.667;
+	color: #767e9e;
+	font-weight: 300;
+	word-spacing: 1px;
+}
+
+/*------------------------ module_service ----------------------------*/
+
+.modules_service {
+	display: flex;
+	width: 100%;
+	background-color: #f2f2f2;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.container_modules {
+	width: 33.33%;
+	margin-top: 26px;
+}
+
+.module {
+	display: flex;
+	margin-bottom: 29px;
+}
+
+.content {
+	padding: 0px 10px;
+	text-align: justify;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+.icon {
+	padding: 0px 10px;
+}
+
+.icon > img {
+	width: 60px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.content p {
+	font-size: 12px;
+	line-height: 22px;
+	font-weight: 400;
+	word-spacing: 1px;
+	color: #767e9e;
+}
+
+.line_color.three {
+	height: 6px;
+	background-color: #ffffff;
+}
+
+.module.b,
+.module.d,
+.module.f {
+	padding-bottom: 30px;
+}
