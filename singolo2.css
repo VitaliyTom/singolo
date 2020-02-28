@@ -1,0 +1,272 @@
+@import url("fonts.css");
+
+* {
+	font-family: "Lato", Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	width: 100%;
+	max-width: 1020px;
+	margin: auto;
+}
+
+.section_portfolio {
+	padding-top: 10px;
+	width: 100%;
+	background-color: #2d303a;
+}
+
+.wrapper_portfolio {
+	display: flex;
+	flex-direction: column;
+	margin-top: 59px;
+	padding: 0px 30px;
+}
+
+.portfolio {
+	padding: 0px 10px;
+}
+
+.portfolio_image {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio > h1 {
+	margin-bottom: 22px;
+	font-size: 3.0rem;
+	font-weight: 900;
+	line-height: 18px;
+	color: #666d89;
+}
+
+.portfolio > p {
+	margin: 27px 0px 12px;
+	font-size: 1.8rem;
+	line-height: 30px;
+	font-weight: 300;
+	color: #767e9e;
+}
+
+.button_portfolio {
+	display: flex;
+}
+
+.button {
+	margin-right: 10px;
+	padding: 0px 7px;
+	border-radius: 5px;
+	border: 1px solid #767e9e;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 19px;
+	color: #767e9e;
+	background-color: #2d303a;
+}
+
+.button_portfolio input:hover {
+	color: #dedede;
+	border: 1px solid #dedede;
+	transition: 0.4s;
+}
+
+.portfolio_image_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 9px 0px 48px;
+	width: 100%;
+	height: 630px;
+	overflow: hidden;
+}
+
+.portfolio_image {
+	padding: 10px;
+	width: 25%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.portfolio_image > div {
+	width: 100%;
+	height: 187px;
+}
+
+.img1 {
+	background-image: url(./assets/Img1.png);
+}
+.img2 {
+	background-image: url(./assets/Img2.png);
+}
+.img3 {
+	background-image: url(./assets/Img3.png);
+}
+.img4 {
+	background-image: url(./assets/Img4.png);
+}
+.img5 {
+	background-image: url(./assets/Img5.png);
+}
+.img6 {
+	background-image: url(./assets/Img6.png);
+}
+.img7 {
+	background-image: url(./assets/Img7.png);
+}
+.img8 {
+	background-image: url(./assets/Img8.png);
+}
+.img9 {
+	background-image: url(./assets/Img9.png);
+}
+.img10 {
+	background-image: url(./assets/Img10.png);
+}
+.img11 {
+	background-image: url(./assets/Img11.png);
+}
+.img12 {
+	background-image: url(./assets/Img12.png);
+}
+
+.img13 {
+	background-image: url(./assets/Img10.png);
+}
+.img14 {
+	background-image: url(./assets/Img11.png);
+}
+.img15 {
+	background-image: url(./assets/Img12.png);
+}
+
+.line_color {
+	height: 6px;
+	background-color: #323746;
+}
+
+/*-----------------------  about us  -----------------------*/
+
+.about_us {
+	background-color: #f2f2f2;
+}
+
+.container_about_us {
+	padding: 10px 30px 0px;
+}
+
+.wrapper_about_us {
+	margin: 58px 0px 35px;
+	padding: 0px 10px;
+}
+
+.wrapper_about_us > h2 {
+	margin-bottom: 27px;
+	font-size: 3.0rem;
+	font-weight: 900;
+	line-height: 18px;
+	color: #666d89;
+}
+
+.wrapper_about_us > p {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #767e9e;
+}
+
+.photo {
+	margin-top: 10px;
+	padding: 0px 10px;
+	width: 33.33%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.wrapper_photo {
+	display: flex;
+	width: 100%;
+}
+
+.img_photo {
+	height: 300px;
+	margin-bottom: 17px;
+}
+
+.img_photo.a {
+	background-image: url(assets/photo1.png);
+}
+
+.img_photo.b {
+	background-image: url(assets/photo2.png);
+}
+
+.img_photo.c {
+	background-image: url(assets/photo3.png);
+}
+
+.photo > h3 {
+	font-size: 1.8rem;
+	font-weight: 900;
+	line-height: 18px;
+	letter-spacing: -0.15px;
+	color: #666d89;
+}
+
+.photo > p {
+	margin-top: 10px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 22px;
+	color: #767e9e;
+}
+
+.social {
+	display: flex;
+	margin: 22px 0px 67px;
+}
+
+.icon {
+	margin-right: 8px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	border: 1px solid #666d89;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon.f {
+	background-image: url(assets/social1.png);
+}
+
+.icon.g {
+	background-image: url(assets/social2.png);
+}
+
+.icon.t {
+	background-image: url(assets/social3.png);
+}
+
+.icon.in {
+	background-image: url(assets/social4.png);
+}
+
+.social a:hover {
+	background-color: #afb6d6;
+	border: 0.5px solid black;
+	transition: 0.3s;
+}
+
+.about_us > .line_color {
+	width: 100%;
+	height: 6px;
+	background-color: #ffffff;
+}
