@@ -74,6 +74,7 @@ body {
 .button_portfolio input:hover {
 	color: #dedede;
 	border: 1px solid #dedede;
+	cursor: pointer;
 	transition: 0.4s;
 }
 
