@@ -18,14 +18,16 @@
           condimentum nibh.</p>
       </div>
       <div class="wrapper_form">
-        <div class="form">
-          <form action="#" method="post">
-            <input type="text" name="name" id="name" placeholder="Name (Required)" maxlength="32" required>
-            <input type="email" name="email" id="email" placeholder="Email (Required)" maxlength="32" required>
+        <div class="module_form">
+          <form class="form" action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Name (Required)" minlength="3" maxlength="32"
+              required>
+            <input type="email" name="email" id="email" placeholder="Email (Required)" minlength="3" maxlength="32"
+              required>
             <input type="text" name="subject" id="subject" placeholder="Subject">
             <textarea name="describe_project" id="describe_project"
               placeholder="Describe your project in detail..."></textarea>
-            <p> <input type="submit" id="submit" value="submit"></p>
+            <input type="submit" id="submit" value="submit">
           </form>
         </div>
         <div class="contact_information">
@@ -53,23 +55,25 @@
         </div>
       </div>
     </section>
-    <div class="line_color"></div>
-    <!-------------------- footer -------------------->
-    <footer class="footer">
-      <div class="wrapper_footer">
-        <div class="copyright">
-          <p>© Copyright 2013</p>
-        </div>
-        <div class="social_footer">
-          <a class="icon f" href="#"></a>
-          <a class="icon g" href="#"></a>
-          <a class="icon t" href="#"></a>
-          <a class="icon in" href="#"></a>
-        </div>
-      </div>
-    </footer>
+    <div class="line_color six"></div>
     </div>
   </main>
+
+  <!-------------------- footer -------------------->
+
+  <footer class="footer">
+    <div class="wrapper_footer">
+      <div class="copyright">
+        <p>© Copyright 2013</p>
+      </div>
+      <div class="social_footer">
+        <a class="icon f" href="#"></a>
+        <a class="icon g" href="#"></a>
+        <a class="icon t" href="#"></a>
+        <a class="icon in" href="#"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

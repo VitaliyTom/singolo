@@ -25,8 +25,13 @@ body {
 .wrapper_get_quote {
 	margin-top: 58px;
 	padding: 0px 10px;
+}
+
+.wrapper_get_quote > h2,
+p {
 	color: #f0d8d9;
 }
+
 
 .wrapper_get_quote > h2 {
 	margin-bottom: 27px;
@@ -49,34 +54,43 @@ body {
 	margin-top: 44px;
 }
 
-.form {
+.module_form {
 	width: 66.6666%;
 	margin-bottom: -3px;
 }
 
-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	padding: 0px 10px;
 }
 
-input,
-textarea {
+.form > input,
+.form > textarea {
 	margin-bottom: 16px;
 	padding: 8px 0px 8px 14px;
 	width: 100%;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: 400;
 	line-height: 22px;
 	resize: none;
-	border: 0px;
+	border: none;
 	border-radius: 5px;
 	background-color: #d6564f;
 	color: #f48c8f;
 }
 
-textarea {
+.form > textarea {
 	height: 202px;
+	letter-spacing: -0.5px;
+	word-spacing: -1px;
+}
+
+.form #submit:hover {
+	cursor: pointer;
+	background-color: #a13032;
+	color: #eca7a7;
+	transition: 0.4s;
 }
 
 ::-webkit-input-placeholder {
@@ -88,8 +102,8 @@ textarea {
 }
 
 .contact_information {
-	width: 33.33%;
 	padding: 0px 10px;
+	width: 33.33%;
 }
 
 .info {
@@ -145,7 +159,7 @@ textarea {
 	background-image: url(assets/mail.png);
 }
 
-.line_color {
+.line_color.six {
 	height: 6px;
 	background-color: #ea676b;
 }
@@ -155,7 +169,7 @@ textarea {
 	text-decoration: none;
 }
 
-/*------------------ footer ------------------*/
+/* ------------------------ footer ---------------------------- */
 
 .footer {
 	padding: 10px 30px;
@@ -166,8 +180,7 @@ textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 12px;
-	margin-bottom: 14px;
+	margin: 12px 0px 14px;
 	padding: 0px 10px;
 }
 
@@ -176,11 +189,11 @@ textarea {
 }
 
 .copyright > p {
-	font-size: 11px;
+	font-size: 1.2rem;
 	color: #666d89;
 }
 
-.icon {
+.social_footer > .icon {
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
@@ -213,6 +226,7 @@ textarea {
 }
 
 .social_footer a:hover {
-	background-color: #ea676b;
-	transition: 0.3s;
+	background-color: #ee9c9e;
+	border-color: #ee9c9e;
+	transition: 0.4s;
 }
