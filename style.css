@@ -420,7 +420,7 @@ body {
 	padding: 0px 10px;
 }
 
-.wrapper_about_us > h2 {
+.wrapper_about_us > h1 {
 	margin-bottom: 27px;
 	font-size: 3.0rem;
 	font-weight: 900;
@@ -467,7 +467,7 @@ body {
 	background-image: url(assets/photo3.png);
 }
 
-.photo > h3 {
+.photo > h2 {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -542,12 +542,12 @@ body {
 	padding: 0px 10px;
 }
 
-.wrapper_get_quote > h2,
+.wrapper_get_quote > h1,
 p {
 	color: #f0d8d9;
 }
 
-.wrapper_get_quote > h2 {
+.wrapper_get_quote > h1 {
 	margin-bottom: 27px;
 	font-size: 3.0rem;
 	font-weight: 900;
@@ -624,7 +624,7 @@ p {
 	color: #f0d8d9;
 }
 
-.info > h3 {
+.info > h2 {
 	margin-bottom: 10px;
 	font-size: 1.8rem;
 	font-weight: 900;
