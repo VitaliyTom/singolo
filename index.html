@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Singolo</title>
+  <title>singolo</title>
   <link rel="stylesheet" href="style.css">
 
-<body>
+<body id="body">
 
   <!-- ------------------------ header ---------------------------- -->
 
@@ -17,12 +17,12 @@
         <a href="#">singolo<span>*</span></a>
       </div>
       <nav>
-        <ul class="navigation">
-          <li><a href="#">home</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
+        <ul class="navigation" id="menu">
+          <li class="li"><a class="active" href="#body">home</a></li>
+          <li class="li"><a href="#services">services</a></li>
+          <li class="li"><a href="#portfolio">portfolio</a></li>
+          <li class="li"><a href="#about">about</a></li>
+          <li class="li"><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -33,33 +33,42 @@
 
     <!-- ------------------------ slider ---------------------------- -->
 
-    <section class="section">
+    <section class="section_phone red">
       <div class="arrow_left">
         <div class="slider_arrow_left"> </div>
       </div>
-      <div class="phones">
-        <div class="iphone_vertical">
-          <img src="assets/phone1.png" alt="phone1">
-          <div class="screen">
-            <img src="assets/screen1.png" alt="screen1">
+      <div id="wrapper_phones" class="wrapper_phones">
+        <div class="phones one">
+          <div id="iphone_vertical" class="iphone_vertical">
+            <img src="assets/phone1.png" alt="phone1">
+            <div class="screen ">
+              <img id="iphone_vertical_screen" src="assets/screen1.png" alt="screen1">
+            </div>
+            <div id="button_screen_vertical" class="button_screen_vertical"></div>
+          </div>
+          <div id="iphone_horizontal" class="iphone_horizontal">
+            <img src="assets/phone2.png" alt="phone2">
+            <div class="screen">
+              <img id="iphone_horizontal_screen" src="assets/screen2.png" alt="screen2">
+            </div>
+            <div id="button_screen_horizontal" class="button_screen_horizontal"></div>
           </div>
         </div>
-        <div class="iphone_horizontal">
-          <img src="assets/phone2.png" alt="phone2">
-          <div class="screen">
-            <img src="assets/screen2.png" alt="screen2">
-          </div>
+        <div class="phones two">
+          <img src="assets/Slide-2.png" alt="slide-2">
         </div>
       </div>
       <div class="arrow_right">
         <div class="slider_arrow_right"> </div>
       </div>
     </section>
-    <div class="line_color two"></div>
+    <div class="line_color_slider red"></div>
+
 
     <!-- ------------------------ service ---------------------------- -->
 
     <section class="section_services">
+      <p> <a class="anchor" id="services"></a></p>
       <div class="services">
         <h1>Our Services</h1>
         <p>
@@ -147,53 +156,54 @@
     <!-- ------------------------ portfolio ---------------------------- -->
 
     <section class="section_portfolio">
+      <p> <a class="anchor" id="portfolio"></a></p>
       <div class="wrapper_portfolio">
         <div class="portfolio">
           <h1>Portfolio</h1>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <div class="button_portfolio">
+          <div id="button_portfolio" class="button_portfolio">
             <input class="button a" type="button" value="All">
             <input class="button b" type="button" value="Web Design">
             <input class="button c" type="button" value="Graphic Design">
             <input class="button d" type="button" value="Artwork">
           </div>
         </div>
-        <div class="portfolio_image_wrap">
+        <div id="portfolio_image_wrap" class="portfolio_image_wrap">
           <div class="portfolio_image">
-            <div class="img1"></div>
+            <div class="img a"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img2"></div>
+            <div class="img b"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img3"></div>
+            <div class="img c"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img4"></div>
+            <div class="img d"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img5"></div>
+            <div class="img e"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img6"></div>
+            <div class="img f"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img7"></div>
+            <div class="img g"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img8"></div>
+            <div class="img h"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img9"></div>
+            <div class="img i"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img10"></div>
+            <div class="img j"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img11"></div>
+            <div class="img k"></div>
           </div>
           <div class="portfolio_image">
-            <div class="img12"></div>
+            <div class="img l"></div>
           </div>
         </div>
       </div>
@@ -203,6 +213,7 @@
     <!-- ------------------------ about us ---------------------------- -->
 
     <section class="about_us">
+      <p> <a class="anchor" id="about"></a></p>
       <div class="container_about_us">
         <div class="wrapper_about_us">
           <h1>About Us</h1>
@@ -258,6 +269,7 @@
     <!-- ------------------------ get quote ---------------------------- -->
 
     <section class="get_quote">
+      <p> <a class="anchor" id="contact"></a></p>
       <div class="wrapper_get_quote">
         <h1>Get a Quote</h1>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -305,6 +317,17 @@
     <div class="line_color six"></div>
   </main>
 
+  <div id="message-block" class="hidden">
+    <div id="message">
+      <p>Письмо отправлено</p>
+      <br>
+      <p><span id="result_Subject"> </span></p>
+      <br>
+      <p><span id="result_Describe_project"> </span></p>
+      <button id="close-btn">OK</button>
+    </div>
+  </div>
+
   <!-- ------------------------ footer ---------------------------- -->
 
   <footer class="footer">
@@ -320,6 +343,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
