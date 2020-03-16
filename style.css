@@ -116,10 +116,12 @@ body {
 
 .section_phone.red {
   background-color: #f06c64;
+  /* z-index: 50; */
 }
 
 .section_phone.blue {
   background-color: #648bf0;
+  /* z-index: 50; */
 }
 
 .slider_arrow_left {
@@ -160,6 +162,7 @@ body {
   margin-top: 53px;
   margin-bottom: 55px;
   width: 100%;
+  left: 0;
 }
 
 .phones.two {

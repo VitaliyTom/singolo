@@ -1,6 +1,5 @@
 // ---------------------------  menu_header  --------------------------------------
 const MENU_NAVI = document.getElementById("menu");
-// console.log(Array.from(document.querySelectorAll('.li')).length );
 
 MENU_NAVI.addEventListener("click", event => {
   MENU_NAVI.querySelectorAll("a").forEach(element =>
@@ -12,29 +11,26 @@ MENU_NAVI.addEventListener("click", event => {
 // ---------------------------  slider  --------------------------------------
 
 let counter = 0;
-let phones = Array.from(document.querySelectorAll(".phones"));
-const SECTION = document.querySelector(".section_phone");
-let mass = [];
-const line_color_slider = document.querySelector(".line_color_slider");
-const WRAPPER_PHONES = document.getElementById("wrapper_phones");
+const PHONES = Array.from(document.querySelectorAll(".phones"));
+const LINE_COLOR_SLIDER = document.querySelector(".line_color_slider");
 
 document.querySelector(".arrow_right").addEventListener("click", () => {
   if (counter === 0) {
     counter = -927;
     document.querySelector(".section_phone").classList.remove("red");
     document.querySelector(".section_phone").classList.add("blue");
-    line_color_slider.classList.remove("red");
-    line_color_slider.classList.add("blue");
-    phones[0].style.left = `${counter}px`;
-    phones[1].style.left = `${counter}px`;
+    LINE_COLOR_SLIDER.classList.remove("red");
+    LINE_COLOR_SLIDER.classList.add("blue");
+    PHONES[0].style.left = `${counter}px`;
+    PHONES[1].style.left = `${counter}px`;
   } else {
     counter = 0;
     document.querySelector(".section_phone").classList.remove("blue");
     document.querySelector(".section_phone").classList.add("red");
-    line_color_slider.classList.remove("blue");
-    line_color_slider.classList.add("red");
-    phones[0].style.left = `${counter}px`;
-    phones[1].style.left = `${counter}px`;
+    LINE_COLOR_SLIDER.classList.remove("blue");
+    LINE_COLOR_SLIDER.classList.add("red");
+    PHONES[0].style.left = `${counter}px`;
+    PHONES[1].style.left = `${counter}px`;
   }
 });
 
@@ -43,18 +39,18 @@ document.querySelector(".arrow_left").addEventListener("click", () => {
     counter = -927;
     document.querySelector(".section_phone").classList.remove("red");
     document.querySelector(".section_phone").classList.add("blue");
-    line_color_slider.classList.remove("red");
-    line_color_slider.classList.add("blue");
-    phones[0].style.left = `${counter}px`;
-    phones[1].style.left = `${counter}px`;
+    LINE_COLOR_SLIDER.classList.remove("red");
+    LINE_COLOR_SLIDER.classList.add("blue");
+    PHONES[0].style.left = `${counter}px`;
+    PHONES[1].style.left = `${counter}px`;
   } else {
     counter = 0;
     document.querySelector(".section_phone").classList.remove("blue");
     document.querySelector(".section_phone").classList.add("red");
-    line_color_slider.classList.remove("blue");
-    line_color_slider.classList.add("red");
-    phones[0].style.left = `${counter}px`;
-    phones[1].style.left = `${counter}px`;
+    LINE_COLOR_SLIDER.classList.remove("blue");
+    LINE_COLOR_SLIDER.classList.add("red");
+    PHONES[0].style.left = `${counter}px`;
+    PHONES[1].style.left = `${counter}px`;
   }
 });
 
@@ -104,33 +100,35 @@ PORTFOLIO_IMG.addEventListener("click", event => {
 
 // ---------------------------  screen  --------------------------------------
 
-let iphone_vertical_screen = document.getElementById("iphone_vertical_screen");
-let iphone_vertical = document.getElementById("button_screen_vertical");
+const IPHONE_VERTICAL_SCREEN = document.getElementById(
+  "iphone_vertical_screen"
+);
+const IPHONE_VERTICAL = document.getElementById("button_screen_vertical");
 let opacity_iphone_vertical = 1;
 
-iphone_vertical.addEventListener("click", () => {
+IPHONE_VERTICAL.addEventListener("click", () => {
   if (opacity_iphone_vertical === 1) {
     opacity_iphone_vertical--;
-    iphone_vertical_screen.style.opacity = opacity_iphone_vertical;
+    IPHONE_VERTICAL_SCREEN.style.opacity = opacity_iphone_vertical;
   } else {
     opacity_iphone_vertical++;
-    iphone_vertical_screen.style.opacity = opacity_iphone_vertical;
+    IPHONE_VERTICAL_SCREEN.style.opacity = opacity_iphone_vertical;
   }
 });
 
-let iphone_horizontal_screen = document.getElementById(
+const IPHONE_HORIZONTAL_SCREEN = document.getElementById(
   "iphone_horizontal_screen"
 );
-let iphone_horizontal = document.getElementById("button_screen_horizontal");
+const IPHONE_HORIZONTAL = document.getElementById("button_screen_horizontal");
 let opacity_iphone_horizontal = 1;
 
-iphone_horizontal.addEventListener("click", () => {
+IPHONE_HORIZONTAL.addEventListener("click", () => {
   if (opacity_iphone_horizontal === 1) {
     opacity_iphone_horizontal--;
-    iphone_horizontal_screen.style.opacity = opacity_iphone_horizontal;
+    IPHONE_HORIZONTAL_SCREEN.style.opacity = opacity_iphone_horizontal;
   } else {
     opacity_iphone_horizontal++;
-    iphone_horizontal_screen.style.opacity = opacity_iphone_horizontal;
+    IPHONE_HORIZONTAL_SCREEN.style.opacity = opacity_iphone_horizontal;
   }
 });
 
@@ -143,24 +141,24 @@ const FORM_VALID = document.querySelector("form");
 SUBMIT.addEventListener("click", event => {
   event.preventDefault();
 
-  const subject = document.getElementById("subject").value.toString();
-  const describe_project = document
+  const SUBJECT = document.getElementById("subject").value.toString();
+  const DESCRIBE_PROJECT = document
     .getElementById("describe_project")
     .value.toString();
 
   if (FORM_VALID.checkValidity()) {
-    if (subject === "") {
+    if (SUBJECT === "") {
       document.getElementById("result_Subject").innerText = "Без темы";
     } else {
-      document.getElementById("result_Subject").innerText = `Тема: ${subject}`;
+      document.getElementById("result_Subject").innerText = `Тема: ${SUBJECT}`;
     }
-    if (describe_project === "") {
+    if (DESCRIBE_PROJECT === "") {
       document.getElementById("result_Describe_project").innerText =
         "Без описания";
     } else {
       document.getElementById(
         "result_Describe_project"
-      ).innerText = `Описание: ${describe_project}`;
+      ).innerText = `Описание: ${DESCRIBE_PROJECT}`;
     }
     document.getElementById("message-block").classList.remove("hidden");
   } else {
