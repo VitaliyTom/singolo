@@ -103,7 +103,7 @@ body {
 
 /*------------------------ slider ----------------------------*/
 
-.section_phone {
+.container_phone {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -112,19 +112,23 @@ body {
 	transition: 1s;
 }
 
+.section_phone a {
+	position: relative;
+	left: 0;
+	top: -95px;
+}
+
 .wrapper_phones {
 	transition: 4s linear;
 }
 
-.section_phone.red {
+.container_phone.red {
 	background-color: #f06c64;
-	/* z-index: 50; */
-}
+	}
 
-.section_phone.blue {
+.container_phone.blue {
 	background-color: #648bf0;
-	/* z-index: 50; */
-}
+	}
 
 .slider_arrow_left {
 	transform: rotate(315deg);

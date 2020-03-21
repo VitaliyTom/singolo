@@ -20,7 +20,6 @@ function onScroll() {
 		function forEachElement() {
 			MENU.forEach((element) => {
 				element.classList.remove('active');
-
 				if (SECTION[i].getAttribute('class') === element.getAttribute('href').substring(1)) {
 					element.classList.add('active');
 				}
@@ -38,16 +37,16 @@ const LINE_COLOR_SLIDER = document.querySelector('.line_color_slider');
 document.querySelector('.arrow_right').addEventListener('click', () => {
 	if (counter === 0) {
 		counter = -927;
-		document.querySelector('.section_phone').classList.remove('red');
-		document.querySelector('.section_phone').classList.add('blue');
+		document.querySelector('.container_phone').classList.remove('red');
+		document.querySelector('.container_phone').classList.add('blue');
 		LINE_COLOR_SLIDER.classList.remove('red');
 		LINE_COLOR_SLIDER.classList.add('blue');
 		PHONES[0].style.left = `${counter}px`;
 		PHONES[1].style.left = `${counter}px`;
 	} else {
 		counter = 0;
-		document.querySelector('.section_phone').classList.remove('blue');
-		document.querySelector('.section_phone').classList.add('red');
+		document.querySelector('.container_phone').classList.remove('blue');
+		document.querySelector('.container_phone').classList.add('red');
 		LINE_COLOR_SLIDER.classList.remove('blue');
 		LINE_COLOR_SLIDER.classList.add('red');
 		PHONES[0].style.left = `${counter}px`;
@@ -58,16 +57,16 @@ document.querySelector('.arrow_right').addEventListener('click', () => {
 document.querySelector('.arrow_left').addEventListener('click', () => {
 	if (counter === 0) {
 		counter = -927;
-		document.querySelector('.section_phone').classList.remove('red');
-		document.querySelector('.section_phone').classList.add('blue');
+		document.querySelector('.container_phone').classList.remove('red');
+		document.querySelector('.container_phone').classList.add('blue');
 		LINE_COLOR_SLIDER.classList.remove('red');
 		LINE_COLOR_SLIDER.classList.add('blue');
 		PHONES[0].style.left = `${counter}px`;
 		PHONES[1].style.left = `${counter}px`;
 	} else {
 		counter = 0;
-		document.querySelector('.section_phone').classList.remove('blue');
-		document.querySelector('.section_phone').classList.add('red');
+		document.querySelector('.container_phone').classList.remove('blue');
+		document.querySelector('.container_phone').classList.add('red');
 		LINE_COLOR_SLIDER.classList.remove('blue');
 		LINE_COLOR_SLIDER.classList.add('red');
 		PHONES[0].style.left = `${counter}px`;
