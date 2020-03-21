@@ -9,11 +9,11 @@ function onScroll() {
 
 	for (let i = 0; i < SECTION.length; i++) {
 		if (i === SECTION.length - 1) {
-			if (SECTION[i].offsetTop - 89 <= CURSOR_POSITION + 145) {
+			if (SECTION[i].offsetTop - 100 <= CURSOR_POSITION + 145) {
 				forEachElement();
 			}
 		}
-		if (SECTION[i].offsetTop - 89 <= CURSOR_POSITION) {
+		if (SECTION[i].offsetTop - 100 <= CURSOR_POSITION + 8) {
 			forEachElement();
 		}
 
