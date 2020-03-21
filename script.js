@@ -1,12 +1,5 @@
 // ---------------------------  menu_header  --------------------------------------
 
-const MENU_NAVI = document.getElementById('menu');
-
-MENU_NAVI.addEventListener('click', (event) => {
-	MENU_NAVI.querySelectorAll('a').forEach((element) => element.classList.remove('active'));
-	event.target.classList.add('active');
-});
-
 const SECTION = Array.from(document.querySelectorAll('section'));
 const MENU = document.getElementById('menu').querySelectorAll('a');
 
