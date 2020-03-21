@@ -17,7 +17,6 @@ body {
 	max-width: 1020px;
 	margin: auto;
 	font-size: 1.2rem;
-	scroll-behavior: smooth;
 }
 
 /*------------------------ header ---------------------------- */
@@ -97,6 +96,7 @@ body {
 }
 
 .line_color.one {
+	filter: blur(3px);
 	height: 6px;
 	background-color: #323746;
 }
@@ -124,11 +124,11 @@ body {
 
 .container_phone.red {
 	background-color: #f06c64;
-	}
+}
 
 .container_phone.blue {
 	background-color: #648bf0;
-	}
+}
 
 .slider_arrow_left {
 	transform: rotate(315deg);
@@ -748,15 +748,14 @@ p {
 	padding-top: 18px;
 	width: 40vw;
 	margin: 18% auto;
-	z-index: 100;
 	font-size: 1.4rem;
 	border: 2px solid #7d5ccb;
 	border-radius: 8px;
-	background-color: rgb(55, 105, 231);
+	background-color: rgb(55, 105, 231, 0.3);
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
-	box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5);
 }
 
 #close-btn {
@@ -769,6 +768,11 @@ p {
 	background-color: #d6564f;
 	color: #dedede;
 	cursor: pointer;
+}
+
+.blur {
+	transition: 2s;
+	filter: blur(5px) brightness(0.6);
 }
 
 .contact_information {

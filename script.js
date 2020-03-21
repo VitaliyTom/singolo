@@ -147,6 +147,9 @@ PORTFOLIO_IMG.addEventListener('click', (event) => {
 const SUBMIT = document.getElementById('submit');
 const CLOSE_BUTTON = document.getElementById('close-btn');
 const FORM_VALID = document.querySelector('form');
+const HEADER = document.querySelector('header');
+const MAIN = document.querySelector('main');
+const FOOTER = document.querySelector('footer');
 
 SUBMIT.addEventListener('click', (event) => {
 	event.preventDefault();
@@ -169,6 +172,10 @@ SUBMIT.addEventListener('click', (event) => {
 	} else {
 		alert('Неправильно введено "name" или "e-mail !"');
 	}
+
+	HEADER.classList.add('blur');
+	MAIN.classList.add('blur');
+	FOOTER.classList.add('blur');
 });
 
 CLOSE_BUTTON.addEventListener('click', () => {
@@ -176,4 +183,7 @@ CLOSE_BUTTON.addEventListener('click', () => {
 	document.getElementById('result_Describe_project').innerText = '';
 	document.getElementById('message-block').classList.add('hidden');
 	document.getElementsByClassName('form')[0].reset();
+	HEADER.classList.remove('blur');
+	MAIN.classList.remove('blur');
+	FOOTER.classList.remove('blur');
 });
