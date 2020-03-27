@@ -31,6 +31,17 @@ function onScroll() {
   }
 }
 
+// ---------------------------  burger  --------------------------------------
+
+let burger = document.getElementById('burger')
+let navigation_burger = document.querySelector('.nav')
+
+
+burger.addEventListener('click', () => {
+  navigation_burger.classList.toggle('open');
+  HEADER.classList.toggle('open');
+})
+
 // ---------------------------  slider  --------------------------------------
 
 let counter = 0
