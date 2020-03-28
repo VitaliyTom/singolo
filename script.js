@@ -1,3 +1,13 @@
+// ---------------------------  burger  --------------------------------------
+
+const BURGER = document.getElementById('burger')
+const NAVIGATION_BURGER = document.querySelector('.nav')
+
+BURGER.addEventListener('click', () => {
+  NAVIGATION_BURGER.classList.toggle('open')
+  HEADER.classList.toggle('open')
+})
+
 // ---------------------------  menu_header  --------------------------------------
 
 const SECTION = Array.from(document.querySelectorAll('section'))
@@ -20,27 +30,21 @@ function onScroll() {
     function forEachElement() {
       MENU.forEach(element => {
         element.classList.remove('active')
+
         if (
           SECTION[i].getAttribute('class') ===
           element.getAttribute('href').substring(1)
         ) {
+          // debugger;
           element.classList.add('active')
+          // close burger-menu
+          NAVIGATION_BURGER.classList.remove('open')
+          HEADER.classList.remove('open')
         }
       })
     }
   }
 }
-
-// ---------------------------  burger  --------------------------------------
-
-let burger = document.getElementById('burger')
-let navigation_burger = document.querySelector('.nav')
-
-
-burger.addEventListener('click', () => {
-  navigation_burger.classList.toggle('open');
-  HEADER.classList.toggle('open');
-})
 
 // ---------------------------  slider  --------------------------------------
 
