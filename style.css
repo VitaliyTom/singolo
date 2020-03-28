@@ -177,6 +177,10 @@ body {
 	width: 100%;
 }
 
+#phone2 {
+	margin-left: -6%;
+}
+
 .phones {
 	position: relative;
 	flex-shrink: 0;
@@ -921,6 +925,10 @@ p {
 }
 
 @media (max-width: 1020px) {
+	#phone2 {
+		margin-left: 0%;
+	}
+
 	.phones img {
 		width: 100%;
 	}
