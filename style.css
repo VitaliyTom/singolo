@@ -1071,6 +1071,11 @@ p {
 		position: relative;
 	}
 
+	.slider_arrow_left,
+	.slider_arrow_right {
+		border-radius: 2px;
+	}
+
 	.screen {
 		border: 1px solid #c6c6c6;
 	}
