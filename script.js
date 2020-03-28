@@ -53,59 +53,43 @@ const PHONES = Array.from(document.querySelectorAll('.phones'))
 const LINE_COLOR_SLIDER = document.querySelector('.line_color_slider')
 let SCREEN_WIDTH = window.innerWidth
 
-// let SCREEN_WIDTH = document.documentElement.clientWidth;
-
 document.querySelector('.arrow_right').addEventListener('click', () => {
   if (counter === 0) {
-    // counter = (SCREEN_WIDTH * 100 / 927 * 10 + 27) * -1;
-    counter = -927
-    // console.log(SCREEN_WIDTH);
-    // for (let i = 1020; i > SCREEN_WIDTH; i++) {
-    // 	counter++;
-    // 	console.log(counter);
-    // }
-    // let iter = 1020;
-    // debugger;
-    // while(iter > SCREEN_WIDTH){
-    // 	counter--;
-    // 	SCREEN_WIDTH++;
-    // 	console.log(counter);
-    // }
-    // counter = counter -1;
+    counter = -100
     document.querySelector('.container_phone').classList.remove('red')
     document.querySelector('.container_phone').classList.add('blue')
     LINE_COLOR_SLIDER.classList.remove('red')
     LINE_COLOR_SLIDER.classList.add('blue')
-    PHONES[0].style.left = `${counter}px`
-    PHONES[1].style.left = `${counter}px`
+    PHONES[0].style.left = `${counter}%`
+    PHONES[1].style.left = `${counter}%`
   } else {
     counter = 0
     document.querySelector('.container_phone').classList.remove('blue')
     document.querySelector('.container_phone').classList.add('red')
     LINE_COLOR_SLIDER.classList.remove('blue')
     LINE_COLOR_SLIDER.classList.add('red')
-    PHONES[0].style.left = `${counter}px`
-    PHONES[1].style.left = `${counter}px`
+    PHONES[0].style.left = `${counter}%`
+    PHONES[1].style.left = `${counter}%`
   }
 })
 
 document.querySelector('.arrow_left').addEventListener('click', () => {
   if (counter === 0) {
-    counter = -927
+    counter = -100
     document.querySelector('.container_phone').classList.remove('red')
     document.querySelector('.container_phone').classList.add('blue')
     LINE_COLOR_SLIDER.classList.remove('red')
     LINE_COLOR_SLIDER.classList.add('blue')
-    PHONES[0].style.left = `${counter}px`
-    PHONES[1].style.left = `${counter}px`
+    PHONES[0].style.left = `${counter}%`
+    PHONES[1].style.left = `${counter}%`
   } else {
     counter = 0
     document.querySelector('.container_phone').classList.remove('blue')
     document.querySelector('.container_phone').classList.add('red')
     LINE_COLOR_SLIDER.classList.remove('blue')
     LINE_COLOR_SLIDER.classList.add('red')
-    PHONES[0].style.left = `${counter}px`
-    PHONES[1].style.left = `${counter}px`
+    PHONES[0].style.left = `${counter}%`
+    PHONES[1].style.left = `${counter}%`
   }
 })
 
