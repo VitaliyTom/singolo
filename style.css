@@ -434,7 +434,7 @@ body {
 
 #button_portfolio input:not(.active):hover {
 	cursor: pointer;
-	color: #767e9e;
+	color: #dedede;
 }
 
 .portfolio_image_wrap {
