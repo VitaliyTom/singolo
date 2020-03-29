@@ -1,18 +1,33 @@
 // ---------------------------  burger  --------------------------------------
 
-const BURGER = document.getElementById('burger')
+const BURGER_OPEN = document.getElementById('burger')
 const NAVIGATION_BURGER = document.querySelector('.nav')
-BURGER.addEventListener('click', () => {
+const MENU_A = document.getElementById('menu').querySelectorAll('a')
+const HEADER = document.querySelector('header')
+const MAIN = document.querySelector('main')
+const FOOTER = document.querySelector('footer')
+const MENU = document.getElementById('menu')
+
+BURGER_OPEN.addEventListener('click', () => {
+  burger()
+})
+
+MENU.addEventListener('click', () => {
+  MENU.querySelectorAll('a').forEach(element => {
+    burger()
+  })
+})
+
+function burger() {
   NAVIGATION_BURGER.classList.toggle('open')
   HEADER.classList.toggle('open')
   MAIN.classList.toggle('blur')
   FOOTER.classList.toggle('blur')
-})
+}
 
 // ---------------------------  menu_header  --------------------------------------
 
 const SECTION = Array.from(document.querySelectorAll('section'))
-const MENU = document.getElementById('menu').querySelectorAll('a')
 
 document.addEventListener('scroll', onScroll)
 function onScroll() {
@@ -29,20 +44,14 @@ function onScroll() {
     }
 
     function forEachElement() {
-      MENU.forEach(element => {
+      MENU_A.forEach(element => {
         element.classList.remove('active')
 
         if (
           SECTION[i].getAttribute('class') ===
           element.getAttribute('href').substring(1)
         ) {
-          // debugger;
           element.classList.add('active')
-          // close burger-menu
-          NAVIGATION_BURGER.classList.remove('open')
-          HEADER.classList.remove('open')
-          MAIN.classList.remove('blur')
-          FOOTER.classList.remove('blur')
         }
       })
     }
@@ -175,9 +184,6 @@ PORTFOLIO_IMG.addEventListener('click', event => {
 const SUBMIT = document.getElementById('submit')
 const CLOSE_BUTTON = document.getElementById('close-btn')
 const FORM_VALID = document.querySelector('form')
-const HEADER = document.querySelector('header')
-const MAIN = document.querySelector('main')
-const FOOTER = document.querySelector('footer')
 
 SUBMIT.addEventListener('click', event => {
   event.preventDefault()
