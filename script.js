@@ -9,21 +9,27 @@ const FOOTER = document.querySelector('footer')
 const MENU = document.getElementById('menu')
 
 BURGER_OPEN.addEventListener('click', () => {
-  burger()
-})
-
-MENU.addEventListener('click', () => {
-  MENU.querySelectorAll('a').forEach(element => {
-    burger()
-  })
-})
-
-function burger() {
   NAVIGATION_BURGER.classList.toggle('open')
   HEADER.classList.toggle('open')
   MAIN.classList.toggle('blur')
   FOOTER.classList.toggle('blur')
-}
+})
+
+MENU.addEventListener('click', () => {
+  MENU.querySelectorAll('a').forEach(element => {
+  NAVIGATION_BURGER.classList.remove('open')
+  HEADER.classList.remove('open')
+  MAIN.classList.remove('blur')
+  FOOTER.classList.remove('blur')
+  })
+})
+
+// function burger() {
+//   NAVIGATION_BURGER.classList.toggle('open')
+//   HEADER.classList.toggle('open')
+//   MAIN.classList.toggle('blur')
+//   FOOTER.classList.toggle('blur')
+// }
 
 // ---------------------------  menu_header  --------------------------------------
 
