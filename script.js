@@ -2,10 +2,11 @@
 
 const BURGER = document.getElementById('burger')
 const NAVIGATION_BURGER = document.querySelector('.nav')
-
 BURGER.addEventListener('click', () => {
   NAVIGATION_BURGER.classList.toggle('open')
   HEADER.classList.toggle('open')
+  MAIN.classList.toggle('blur')
+  FOOTER.classList.toggle('blur')
 })
 
 // ---------------------------  menu_header  --------------------------------------
@@ -40,6 +41,8 @@ function onScroll() {
           // close burger-menu
           NAVIGATION_BURGER.classList.remove('open')
           HEADER.classList.remove('open')
+          MAIN.classList.remove('blur')
+          FOOTER.classList.remove('blur')
         }
       })
     }

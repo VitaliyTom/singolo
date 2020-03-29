@@ -790,7 +790,7 @@ p {
 }
 
 .blur {
-	transition: 2s;
+	transition: 0.5s;
 	filter: blur(5px) brightness(0.6);
 }
 
@@ -924,7 +924,10 @@ p {
 	transition: 0.4s;
 }
 
+/* ------------------------ media 1020px ---------------------------- */
+
 @media (max-width: 1020px) {
+	/* slider */
 	#phone2 {
 		margin-left: 0%;
 	}
@@ -947,6 +950,7 @@ p {
 		border-left: 0.6vw solid #41c758;
 	}
 
+	/* contact form */
 	.form {
 		margin-bottom: 25px;
 	}
@@ -961,7 +965,11 @@ p {
 	}
 }
 
+/* ------------------------ media 768px ---------------------------- */
+
 @media (max-width: 768px) {
+	
+	/* slider */
 	.screen {
 		border: 2px solid #c6c6c6;
 	}
@@ -970,22 +978,24 @@ p {
 		height: 100%;
 	}
 
+	/* service */
+	#section_services {
+		top: -63px;
+	}
+
 	.module {
 		width: 50%;
 		padding-top: 16px;
 		margin-bottom: 29px;
 	}
 
+	/* portfolio */
 	.portfolio_image_wrap {
 		height: 6.2%;
 	}
 
 	.portfolio_image {
 		width: 33.333%;
-	}
-
-	#section_services {
-		top: -63px;
 	}
 
 	.line_color {
@@ -997,7 +1007,10 @@ p {
 	}
 }
 
+/* ------------------------ media 375px ---------------------------- */
+
 @media (max-width: 375px) {
+	/* header */
 	.navigation a::after {
 		display: none;
 	}
@@ -1079,6 +1092,7 @@ p {
 		position: relative;
 	}
 
+	/* slider */
 	.slider_arrow_left,
 	.slider_arrow_right {
 		border-radius: 2px;
@@ -1092,12 +1106,14 @@ p {
 		padding: 0 10px;
 	}
 
+	/* service */
 	.section_services {
 		padding: 0 30px;
 	}
 
 	.module {
 		margin-bottom: 15px;
+		width: 100%;
 	}
 
 	.icon_module {
@@ -1107,6 +1123,12 @@ p {
 		margin-bottom: 0;
 	}
 
+	.anchor,
+	#section_services {
+		top: 13px;
+	}
+
+	/* potfolio */
 	.wrapper_portfolio {
 		margin-top: 40px;
 		padding-bottom: 40px;
@@ -1132,10 +1154,6 @@ p {
 		margin: 0 auto;
 	}
 
-	.module {
-		width: 100%;
-	}
-
 	.portfolio_image {
 		padding: 5px;
 		width: 50%;
@@ -1145,6 +1163,7 @@ p {
 		overflow: hidden;
 	}
 
+	/* about us */
 	.wrapper_about_us {
 		margin-top: 25px;
 		margin-bottom: 20px;
@@ -1166,6 +1185,7 @@ p {
 		margin-bottom: 34px;
 	}
 
+	/* get quote */
 	.wrapper_get_quote {
 		margin-top: 24px;
 		padding: 0;
@@ -1199,13 +1219,6 @@ p {
 		margin-bottom: 40px;
 		padding: 0;
 	}
-	.copyright {
-		display: none;
-	}
-
-	.social_footer {
-		margin-left: 65px;
-	}
 
 	#message {
 		padding-top: 18px;
@@ -1213,9 +1226,13 @@ p {
 		margin: 50% auto;
 	}
 
-	.anchor,
-	#section_services {
-		top: 13px;
+	/* footer */
+	.copyright {
+		display: none;
+	}
+
+	.social_footer {
+		margin-left: 65px;
 	}
 
 	.line_color {
